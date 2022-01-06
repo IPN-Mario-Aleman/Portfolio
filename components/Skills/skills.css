@@ -1,0 +1,464 @@
+/* Buttons skill tabs*/
+.skill_container{
+    display: flex;
+    width: 100vw;
+    margin: 10px 5px;
+    color: #000;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.skills_tabs{
+    margin: 1.5rem 0;
+    padding: 4px 7px;
+    border-radius: 5px;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 15%);
+    transition: box-shadow 0.2s ease;
+}
+
+.skills_tabs:hover{
+    background: rgb(46, 46, 46);
+    box-shadow: 0 5px 10px rgb(0 0 0 / 25%);
+    color: white;
+    cursor: pointer;
+}
+
+.skills_tabs.active{
+    background: rgb(46, 46, 46);
+    box-shadow: 0 5px 10px rgb(0 0 0 / 25%);
+    color: white;
+}
+
+.skill_button{
+    margin-right: 1rem;
+}
+
+.icon_sk{
+    margin-right: .5rem;
+}
+
+
+
+/*bars and levels*/
+.title_skill{
+    font-size: 2rem;
+    color: darkblue;
+}
+.skills-bar{
+    width: 100vw;
+    margin-top: 2rem;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-direction: column;
+}
+
+.card_frontend{
+    width: 80%;
+    background: #f3f1f1;
+    border-radius: 10px;
+    padding: 15px 30px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2) !important;
+}
+.bar{
+    margin: 20px 0;
+}
+.card_frontend .bar:first-child{
+    margin-top: 0px;
+}
+.card_frontend .bar .info{
+    margin-bottom: 5px;
+}
+.card_frontend .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 0;
+    animation: showText .5s 1s linear forwards;
+}
+
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+
+.card_frontend .bar .progres-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    border-radius: 10px;
+    background: #f0f0f0;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),
+                      0px 1px 1px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.card_frontend .bar .progres-line span{
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    background: #6665ee;
+    position: absolute;
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+@keyframes animate {
+    100%{
+        transform: scaleY(1);
+    }
+}
+
+.card_frontend .bar .progres-line span::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.card_frontend .bar .progres-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background: #000;
+    padding: 1px 8px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.card_frontend .bar .progres-line.html span{
+    width: 90%;
+}
+
+.card_frontend .bar .progres-line.css span{
+    width: 80%;
+}
+
+.card_frontend .bar .progres-line.javascript span{
+    width: 80%;
+}
+
+.card_frontend .bar .progres-line.react span{
+    width: 50%;
+}
+
+.card_frontend .bar .progres-line.angular span{
+    width: 20%;
+}
+
+.card_frontend .bar .progres-line.ionic span{
+    width: 20%;
+}
+
+
+.card_frontend .bar .progres-line.tailwind span{
+    width: 50%;
+}
+
+.card_frontend .bar .progres-line.bootstrap span{
+    width: 50%;
+}
+
+.card_frontend .bar .progres-line.html span::after{
+    content: '90%';
+}
+
+.card_frontend .bar .progres-line.css span::after{
+    content: '80%';
+}
+
+.card_frontend .bar .progres-line.javascript span::after{
+    content: '80%';
+}
+
+.card_frontend .bar .progres-line.react span::after{
+    content: '50%';
+}
+
+.card_frontend .bar .progres-line.angular span::after{
+    content: '20%';
+}
+
+.card_frontend .bar .progres-line.ionic span::after{
+    content: '20%';
+}
+
+
+.card_frontend .bar .progres-line.tailwind span::after{
+    content: '50%';
+}
+
+.card_frontend .bar .progres-line.bootstrap span::after{
+    content: '50%';
+}
+
+/*backend*/
+
+.card_backend{
+    width: 80%;
+    background: #f3f1f1;
+    border-radius: 10px;
+    padding: 15px 30px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2) !important;
+}
+
+.card_backend .bar:first-child{
+    margin-top: 0px;
+}
+.card_backend .bar .info{
+    margin-bottom: 5px;
+}
+.card_backend .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 0;
+    animation: showText .5s 1s linear forwards;
+}
+
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+
+.card_backend .bar .progres-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    border-radius: 10px;
+    background: #f0f0f0;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),
+                      0px 1px 1px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.card_backend .bar .progres-line span{
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    background: #6665ee;
+    position: absolute;
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+@keyframes animate {
+    100%{
+        transform: scaleY(1);
+    }
+}
+
+.card_backend .bar .progres-line span::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.card_backend .bar .progres-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background: #000;
+    padding: 1px 8px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.card_backend .bar .progres-line.nodejs span{
+    width: 60%;
+}
+
+.card_backend .bar .progres-line.java span{
+    width: 50%;
+}
+
+.card_backend .bar .progres-line.cmas span{
+    width: 50%;
+}
+
+
+.card_backend .bar .progres-line.nodejs span::after{
+    content: '60%';
+}
+
+.card_backend .bar .progres-line.java span::after{
+    content: '50%';
+}
+.card_backend .bar .progres-line.cmas span::after{
+    content: '50%';
+}
+
+/*base de datos y control de versiones*/
+
+
+.card_designer_db_cversion{
+    width: 80%;
+    background: #f3f1f1;
+    border-radius: 10px;
+    padding: 15px 30px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2) !important;
+}
+
+.card_designer_db_cversion .bar:first-child{
+    margin-top: 0px;
+}
+.card_designer_db_cversion .bar .info{
+    margin-bottom: 5px;
+}
+.card_designer_db_cversion .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 0;
+    animation: showText .5s 1s linear forwards;
+}
+
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+
+.card_designer_db_cversion .bar .progres-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    border-radius: 10px;
+    background: #f0f0f0;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),
+                      0px 1px 1px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.card_designer_db_cversion .bar .progres-line span{
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    background: #6665ee;
+    position: absolute;
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+@keyframes animate {
+    100%{
+        transform: scaleY(1);
+    }
+}
+
+.card_designer_db_cversion .bar .progres-line span::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.card_designer_db_cversion .bar .progres-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background: #000;
+    padding: 1px 8px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.card_designer_db_cversion .bar .progres-line.photoshop span{
+    width: 30%;
+}
+
+.card_designer_db_cversion .bar .progres-line.mysql span{
+    width: 80%;
+}
+
+.card_designer_db_cversion .bar .progres-line.sqlserver span{
+    width: 80%;
+}
+
+.card_designer_db_cversion .bar .progres-line.git_github span{
+    width: 60%;
+}
+
+
+.card_designer_db_cversion .bar .progres-line.photoshop span::after{
+    content: '30%';
+}
+
+.card_designer_db_cversion .bar .progres-line.mysql span::after{
+    content: '80%';
+}
+
+.card_designer_db_cversion .bar .progres-line.sqlserver span::after{
+    content: '80%';
+}
+
+.card_designer_db_cversion .bar .progres-line.git_github span::after{
+    content: '60%';
+}

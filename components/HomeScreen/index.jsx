@@ -103,7 +103,7 @@ export default function HomeScreen(){
                     <i className="scroll-down-mouse">
                         <FontAwesomeIcon icon={['fas', 'mouse']}/>
                     </i>
-                    <span className="scroll-down-name">Scroll down</span>
+                    <span className="scroll-down-name"> <a href="#about"> Scroll down </a></span>
                     <i className="scroll-down-arrow">
                         <FontAwesomeIcon icon={['fas', 'arrow-down']}/>
                     </i>

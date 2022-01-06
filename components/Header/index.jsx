@@ -23,7 +23,7 @@ export default function Header(){
                 <div className="nav_menu ml-auto " id="nav-menu">
                     <ul className={state.clicked ? "nav_list md:grid md:grid-cols-6" : "nav_list grid"}>
                         <li className="nav_item">
-                            <a href="#" className="nav_link" onClick={handleClick}>
+                            <a href="#home" className="nav_link" onClick={handleClick}>
                                 <i className="nav_icon">
                                     <FontAwesomeIcon icon={['fas', 'home']}/> 
                                     <div className="nav_name">
@@ -33,7 +33,7 @@ export default function Header(){
                             </a>
                         </li>
                         <li className="nav_item">
-                            <a href="#" className="nav_link" onClick={handleClick}>
+                            <a href="#about" className="nav_link" onClick={handleClick}>
                                 <i className="nav_icon">
                                     <FontAwesomeIcon icon={['fas', 'user']}/>
                                     <div className="nav_name">
@@ -43,7 +43,7 @@ export default function Header(){
                             </a>
                         </li>
                         <li className="nav_item">
-                            <a href="#" className="nav_link" onClick={handleClick}>
+                            <a href="#skills" className="nav_link" onClick={handleClick}>
                                 <i className="nav_icon">
                                     <FontAwesomeIcon icon={['fas', 'file-alt']}/>
                                     <div className="nav_name">

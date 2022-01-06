@@ -4,6 +4,8 @@ import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
 import HomeScreen from '../components/HomeScreen'
 import About from '../components/About'
+import Skills from '../components/Skills'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
       <Header></Header>
       <HomeScreen></HomeScreen>
       <About></About>
+      <Skills></Skills>
+      <Footer></Footer>
     </>
   )
 }
