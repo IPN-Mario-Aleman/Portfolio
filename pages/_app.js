@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import '../components/Header/header.css'
 import '../components/HomeScreen/home.css'
+import '../components/About/about.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'

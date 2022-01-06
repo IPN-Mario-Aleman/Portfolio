@@ -1,0 +1,73 @@
+/*About me*/
+
+.about_img{
+    width: 200px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.section_about_sub{
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+    
+
+.description_data{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    padding: 1rem;
+}
+
+.info_data{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1.5rem;
+}
+
+.about_info_title{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: hsl(250, 8%, 15%);
+}
+
+.about_info_name{
+    font-size: .75rem;
+}
+
+.about_info_title,
+.about_info_name{
+    display: block;
+    text-align: center;
+}
+
+.about_button{
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .section-title{
+        font-size: 3rem;
+    }
+
+    .section_about_sub{
+        font-size: 1.5rem;
+    }
+    
+    .description_data{
+        font-size: 1.25rem;
+    }
+    .about_info_name,
+    .about_info_title{
+        font-size: 1.15rem;
+    }
+    
+    .info_data{
+        margin-bottom: 2.5rem;
+    }
+}
