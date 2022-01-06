@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -6,11 +10,52 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
+/*Base CSS*/
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+ul{
+  list-style: none;
+}
+
+li{
+  list-style: none;
+}
+
+a{
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+/*Reusable CSS*/
+.section-1{
+  padding: 2rem 0 4rem;
+}
+
+.section-title{
+  font-size: 1.5rem;
+}
+
+.section-subtitle{
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+.section-title,
+.section-subtitle{
+  text-align: center;
+}
+
+/*Layout*/
+
+.grid{
+  display: grid;
 }
