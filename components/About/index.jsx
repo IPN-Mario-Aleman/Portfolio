@@ -27,7 +27,7 @@ export default function About(){
                     </div>
 
                     <div className="about_button">
-                        <a download="" href="Mario_Aleman.pdf" className="button button-flex">
+                        <a download="" href="Mario_AlemanCV.pdf" className="button button-flex">
                             Descargar CV <FontAwesomeIcon icon={['fas', 'file-download']}/>
                         </a>
                     </div>
